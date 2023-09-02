@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Poppins&family=Roboto:wght@300&family=Sofia+Sans:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.parent {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+
+/* styling side-bar */
+
+.side {
+  flex: 1;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+.logo > svg {
+  width: 100px;
+  height: 30px;
+  margin: 10px 10px 15px 10px;
+}
+.menu {
+  width: 100%;
+}
+.menu > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.menu > div > p {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 10px;
+}
+.menu > div > svg {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
+.menu > div:first-child {
+  width: 100%;
+  border-radius: 4px;
+  background: #282828;
+  padding: 5px 0px 5px 0px;
+}
+.playlists {
+  width: 100%;
+}
+.playlists > p {
+  color: #b3b3b3;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 15px 0px 5px 10px;
+}
+.playlists > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.playlists > div > svg {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
+.playlists > div > p {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 10px;
+}
+.playlists > div:last-child {
+  width: 90%;
+  border-top: 1px solid #282828;
+  margin: 20px 0px 0px 10px;
+}
+.picture {
+  width: 100%;
+}
+.picture > img {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+}
+
+/* styling main-bar */
+
+.main {
+  flex: 7;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.gradient {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 61%;
+  background: linear-gradient(180deg, #90aea7 0%, #000 100%);
+}
+.selected {
+  display: flex;
+  margin-top: 3.5vw;
+}
+.profile > img {
+  width: 200px;
+  height: 200px;
+}
+.data {
+  margin-top: 70px;
+}
+.data > p:first-child {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+.data > h1 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -1.8px;
+}
+.data > p:nth-child(3) {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.9%;
+  letter-spacing: -0.28px;
+}
+.data > span > img {
+  vertical-align: middle;
+}
+.data > span:nth-child(4) {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 146.9%;
+  letter-spacing: -0.3px;
+}
+.data > span:nth-child(5) {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+.data > span:last-child {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+.icons {
+  margin-left: 30px;
+}
+.icons > svg {
+  width: 30px;
+  height: 30px;
+}
+.icons > img {
+  width: 30px;
+  height: 30px;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+.heading > P {
+  margin-top: 18px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.32px;
+}
+.heading > p > span {
+  margin-left: 7px;
+}
+.heading > p:nth-child(1) {
+  margin-left: 2vw;
+}
+.heading > p:nth-child(2) {
+  margin-left: 29vw;
+}
+.heading > p:nth-child(3) {
+  margin-left: 22vw;
+}
+.line {
+  width: 97%;
+  opacity: 0.1;
+  border-top: 1px solid #fff;
+  margin-top: -6px;
+  margin-left: 30px;
+}
+.black {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.15);
+}
+.container1 {
+  background-color: #000;
+  margin-top: 100px;
+}
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 35px;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.title > svg {
+  width: 10px;
+  height: 10px;
+}
+.title > img {
+  width: 25px;
+  height: 30px;
+  margin-left: 8px;
+}
+.title > div > p:first-child {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.188px;
+  margin-left: 8px;
+}
+.title > div > p:last-child {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 8px;
+}
+.album {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+.date {
+  color: #fff;
+  font-family: Noto Sans CJK KR;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+.blank {
+  display: flex;
+  align-items: center;
+}
+.blank > svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+.blank > span {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-inline: 8px;
+}
+.blank > img {
+  width: 21.369px;
+  height: 24px;
+}
+.song1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  height: 36.5px;
+  margin-left: 30px;
+  margin-right: 5px;
+}
+.title1 {
+  display: flex;
+  align-items: center;
+}
+.title1 > p {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.188px;
+}
+.title1 > img {
+  width: 23px;
+  height: 30px;
+  margin-left: 10px;
+}
+.title1 > div > p:first-child {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.188px;
+  margin-left: 10px;
+}
+.title1 > div > p:last-child {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+.album1 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+.date1 {
+  color: #fff;
+  font-family: Noto Sans CJK KR;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: -10px;
+}
+.blank1 {
+  display: flex;
+  align-items: center;
+}
+.blank1 > span {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-inline: 8px;
+}
+.blank1 > img {
+  width: 21.369px;
+  height: 24px;
+}
+
+/* styling music-player */
+
+.music-player {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  padding-inline: 5px;
+}
+.music-player > img:nth-child(1) {
+  width: 23vw;
+  height: 4vw;
+}
+.music-player > img:nth-child(2) {
+  width: 50vw;
+  height: 4vw;
+}
+.music-player > img:nth-child(3) {
+  width: 20vw;
+  height: 2vw;
+}
+
+/* media queries */
+
+@media screen and (max-width: 991px) {
+  .selected {
+    margin-top: 0.1vw;
+  }
+  .icons {
+    margin-top: -10px;
+  }
+  .heading {
+    margin-top: 2px;
+  }
+  .heading > p:nth-child(3) {
+    margin-left: 16vw;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .container1 {
+    margin-top: 12vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .side {
+    display: none;
+  }
+  .selected {
+    margin-top: 0.1vw;
+  }
+  .data {
+    display: none;
+  }
+  .icons {
+    margin-top: -20px;
+  }
+  .heading {
+    margin-top: 2px;
+  }
+  .heading > p:nth-child(1) {
+    margin-left: 5vw;
+  }
+  .heading > p:nth-child(2) {
+    margin-left: 50vw;
+  }
+  .heading > p:nth-child(3) {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .blank,
+  .blank1,
+  .date,
+  .date1 {
+    display: none;
+  }
+  .container1 {
+    margin-top: 12vw;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container1 {
+    margin-top: 15vw;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container1 {
+    margin-top: 20vw;
+  }
+  .song {
+    height: 45px;
+  }
+  .song1 {
+    height: 46px;
+  }
+}
